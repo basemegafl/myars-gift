@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="floating-hearts" id="heartsContainer" aria-hidden="true"></div>
+
+<div class="overlay" id="welcomeOverlay">
+    <div class="overlay-card">
+    <span class="pulse-heart">❤️</span>
+    <h2>A Special Gift For <span class="gf-name">Myar</span></h2>
+    <p>Turn your volume up </p>
+    <button class="btn-primary" id="openGiftBtn">Open Your Gift 🌹</button>
+    </div>
+  </div>
+
+
+<button class="music-toggle" id="musicToggleBtn" label="toggle mackground music">
+    <div class="equalizer" id="equalizer">
+    <span></span><span></span><span></span><span></span>
+    </div>
+    <span id="musicStatusText">Music On</span>
+  </button>
+<main class="container">
+    <header class="hero glass-card">
+      <p class="subtitle">i will always choose you </p>
+      <h1>To My Favorite Person,<br />
+    <span class="gf-name editable" id="heroName" title="Click to edit name">Myar</span>
+    </h1>
+     <p class="hero-desc">
+    عملت حاجه بسيطه كدا عشان انا شايف ان افعالي و كلامي مش كفايه فقلت اعمل صفحه دي تبين لك انا بحبك قد ايه برضو
+      </p>
+    </header>
+    
+    <section class="rizz-section glass-card">
+      <div class="badge">كلمات حلوه</div>
+      <blockquote class="rizz-quote" id="rizzDisplay">
+    "Are you a magician? Because whenever I look at you, everyone else disappears."
+      </blockquote>
+      <button class="btn-secondary" id="nextRizzBtn" >  كلام تاني 💫</button>
+    </section>
+
+    <section class="cards-section">
+      <h2 class="section-title">Why You're Unmatched</h2>
+      <div class="cards-grid">
+
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+        <div class="flip-card-inner">
+        <div class="flip-card-front glass-card">
+         <span class="card-icon">🌹</span>
+         <h3>Your vibe</h3>
+         <p class="tap-hint">(Tap to flip)</p>
+    </div>
+    <div class="flip-card-back glass-card">
+     <p>You make every single room brighter just by walking into it. Effortlessly stunning.</p>
+    </div>
+    </div>
+        </div>
+
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+         <div class="flip-card-front glass-card">
+      <span class="card-icon">💫</span>
+         <h3>Your Smile</h3>
+         <p class="tap-hint">(دوسي)</p>
+        </div>
+        <div class="flip-card-back glass-card">
+   <p>If I could rearrange the alphabet, I’d put ‘U’ and ‘I’ together—right next to that smile.</p>
+         </div>
+        </div>
+        </div>
+
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+         <div class="flip-card-inner">
+         <div class="flip-card-front glass-card">
+      <span class="card-icon">🦋</span>
+         <h3>my heart</h3>
+         <p class="tap-hint">(Tap to flip)</p>
+        </div>
+        <div class="flip-card-back glass-card">
+          <p>Out of all the places I've ever been, being by your side is still my favorite destination.</p>
+         </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="proposal-section glass-card" id="proposalSection">
+      <h2>so <span class="gf-name">Myar</span>...</h2>
+      <p class="proposal-question">i will stay with u until my life is over💖</p>
+      
+      <div class="btn-group" id="proposalButtons">
+        <button class="btn-primary yes-btn" id="yesBtn">ILY❤️</button>
+        <button class="btn-dodge" id="noBtn">No</button>
+      </div>
+
+      <div class="celebration-msg hidden" id="celebrationMsg">
+        <h3>❤️ونا كمان بحبك يا روحي❤️</h3>
+        <p>You just made me the happiest person alive, <span class="gf-name">Myar</span> by being in it!</p>
+      </div>
+    </section>
+
+</main>
+
+
+<audio id="bgMusic" src="ESS - LAMA AB'AA MAAK  إس - لما ابقى معاك (Official Visualizer) - ESS - إس.mp3" loop preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
